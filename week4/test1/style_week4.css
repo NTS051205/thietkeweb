@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+h1:hover {
+    color: red;
+}
+
+p.para3::after {
+    background-color: yellow;
+    font-size: 50px;
+    content: "ND cuoois ddoanj ";
+}
