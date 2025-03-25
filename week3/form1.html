@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form cơ bản</title>
+    <link rel="stylesheet" href="styleform1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Form cơ bản</h1>
+    <form action="">
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            Họ tên: <input type="text" name="name" id="name" placeholder="Nhập họ tên"><br><br> Email: <input type="email" name="email" id="email" placeholder="abc@example.com"><br><br> Giới tính:
+            <input type="radio" name="Giới tính" id="nam"><label for="nam">Nam</label>
+            <input type="radio" name="Giới tính" id="nữ"><label for="nữ">Nữ</label>
+            <input type="radio" name="Giới tính" id="khác"><label for="khác">Khác</label><br><br> Ngày sinh: <input type="datetime-local" name="birthday" id="birthday"><br><br> Ảnh đại diện: <input type="file" name="avatar[]" id="avatar" multiple accept="image/*"><br><br>            Sở thích: <textarea name="hobby" id="hobby" cols="50" rows="5" placeholder="Nhập sở thích của bạn..."></textarea><br><br> Ngành học: <select name="major" id="major">
+                <optgroup label="Công nghệ thông tin">
+                    <option value="se">Kỹ thuật phần mềm</option>
+                    <option value="ai" selected>Trí tuệ nhân tạo</option>
+                    <option value="is">An toàn thông tin</option>
+                </optgroup>
+                <optgroup label="Kinh doanh">
+                    <option value="ba">Quản trị kinh doanh</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="finance">Tài chính</option>
+                </optgroup>
+                <optgroup label="Thiết kế">
+                    <option value="gd">Thiết kế đồ họa</option>
+                    <option value="ui">UI/UX Design</option>
+                    <option value="fashion">Thiết kế thời trang</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Học vấn & Kỹ năng</legend>
+            Ngôn ngữ lập trình đã biết:
+            <input type="checkbox" name="language" id="java"><label for="java">Java</label>
+            <input type="checkbox" name="language" id="python" checked><label for="python">Python</label>
+            <input type="checkbox" name="language" id="javascript"><label for="javascript">JavaScript</label>
+            <input type="checkbox" name="language" id="cpp"><label for="cpp">C++</label>
+            <input type="checkbox" name="language" id="csharp"><label for="csharp">C#</label>
+        </fieldset>
+        <fieldset>
+            <legend>Kinh nghiệm làm việc</legend>
+            Số năm kinh nghiệm làm việc trong lĩnh vực IT:
+            <input type="number" name="experience" id="experience" min="3" max="30" step="3" value="0"><br><br> Mức lương mong muốn:
+            <input type="range" name="salary" id="salary" min="1000" max="10000" step="1000" value="5000" oninput="document.getElementById('salaryValue').innerHTML = this.value + '$'">
+            <output id="salaryValue">5000$</output>
+        </fieldset>
+        <fieldset>
+            <legend>Thông tin tài khoản</legend>
+            <div class="password-container">
+                Mật khẩu: <input type="password" name="password" id="password" placeholder="Nhập mật khẩu">
+                <i class="fas fa-eye" id="togglePassword"></i>
+            </div><br><br> Ảnh đại diện: <input type="file" name="avatar[]" id="avatar" multiple accept="image/*">
+        </fieldset>
+        <input type="button" value="Đăng Ký" disabled>
+        <input type="reset" value="Làm lại">
+        <input type="submit" value="Gửi">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ 1</title>
+    <link rel="stylesheet" href="styleform1.css">
+</head>
+
+<body>
+    <h1>Form đăng nhập</h1>
+    <form action="" method="get" novalidate>
+        username: <input type="text" name="username" id="username" placeholder="Nhập tên đăng nhập" readonly>
+        <br><br> password: <input type="password" name="password" id="password" placeholder="Nhập mật khẩu">
+        <br><br> email: <input type="email" name="email" id="email" placeholder="Nhập email">
+        <br><br> Ngành học:
+        <input list="dsnganh">
+        <datalist id="dsnganh">
+            <option value="Kỹ thuật phần mềm"></option>
+            <option value="Trí tuệ nhân tạo"></option>
+            <option value="An toàn thông tin"></option>    
+        </datalist>
+        <input type="submit" value="Đăng nhập">
+    </form>
+</body>
+
+</html>
