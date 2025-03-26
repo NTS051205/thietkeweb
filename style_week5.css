@@ -1,0 +1,56 @@
+h2 {
+    color: #FF0000;
+    font-size: 20px;
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000000;
+    border-width: 1px;
+    border-style: solid dashed dotted double;
+    /* trên phải dưới trái */
+    border-color: aquamarine;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center; 
+    box-sizing: border-box;
+}
+.div1 {
+    background-color: #FF0000;
+}
+.div2 {
+    background-color: #00FF00;
+}
+.div3 {
+    background-color: #b081ea;
+}
+.div4 {
+    background-color: #FFFF00;
+}
+.div5 {
+    background-color: #FF00FF;
+}
+.div6 {
+    background-color: #00FFFF;
+}
+p{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 10px;
+    text-indent: 50px;
+}
