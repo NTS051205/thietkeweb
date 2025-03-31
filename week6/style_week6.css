@@ -1,0 +1,23 @@
+ul{
+    list-style-type:none ;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    width: 200px;
+}
+li{
+    text-align: center;
+    display:inline;
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 15px;
+    display: inline-block;
+    color: black;
+}
+li a:hover{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
